@@ -38,7 +38,7 @@ describe("server module", function() {
   		.end((err, res) => {
   			expect(res).to.have.status(200);
   			expect(err).to.be.null;
-  			expect(res).to.be.json;
+  			expect(res).to.be.string;
   			expect(res.body.status).to.be.string;
   			done();
   		})
